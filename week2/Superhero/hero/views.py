@@ -19,3 +19,12 @@ class IronManView(TemplateView):
 
 class BlackWidowView(TemplateView):
     template_name = "black_widow.html"
+    
+    def get_context_data(self, **kwargs):
+        return {
+            'title': 'My Home Page', 
+            'body': 'This page is boring ...',
+        }
+
+class HerosView(TemplateView):
+    template_name = "hero.html"
