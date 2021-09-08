@@ -28,3 +28,6 @@ class BlackWidowView(TemplateView):
 
 class HerosView(TemplateView):
     template_name = "hero.html"
+
+class HomeView(TemplateView):
+    template_name = "home_page.html"
