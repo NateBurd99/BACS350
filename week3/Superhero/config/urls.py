@@ -3,7 +3,7 @@ from django.urls import path
 from hero.views import HulkView, IronManView , BlackWidowView, HerosView, HomeView
 
 urlpatterns = [
-    path("", HomeView.as_view()),
+    path("", IndexView.as_view()),
     path('hero', HerosView.as_view()),
     path('hulk', HulkView.as_view()),
     path('ironman', IronManView.as_view()),
