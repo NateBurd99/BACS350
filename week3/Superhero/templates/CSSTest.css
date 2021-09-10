@@ -1,0 +1,40 @@
+
+body {
+    background-color: rgb(167, 167, 167);
+} 
+ul {
+    background-color: aqua;
+}
+.grid {
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+}
+.frame{
+    position:relative;
+    max-width: 450px;
+    margin: 2% auto;
+}
+.frame:hover{
+    opacity:1;
+    box-shadow: 8px 8px 10px #808080;
+}
+.pic-text{
+    position: absolute; 
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    width: 88%;
+    padding: 20px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5 em;
+    font-weight: bold;
+
+}
+li {
+    background-color: green;
+}
+dl {
+    background-color: yellow;
+}
