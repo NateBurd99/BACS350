@@ -31,3 +31,6 @@ class HerosView(TemplateView):
 
 class IndexView(TemplateView):
     template_name = "index.html"
+
+class RandomView(TemplateView):
+    template_name = "random.html"
