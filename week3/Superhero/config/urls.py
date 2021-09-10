@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path
-from hero.views import HulkView, IronManView , BlackWidowView, HerosView, HomeView
+from hero.views import HulkView, IronManView , BlackWidowView, HerosView, IndexView
 
 urlpatterns = [
     path("", IndexView.as_view()),
