@@ -23,6 +23,6 @@ urlpatterns = [
     path('', IndexView.as_view()),
     path("hero/", HeroListView.as_view()),
     path("hero/<int:pk>", HeroDetailView.as_view()),
-     path("hero/Hulk", HeroDetailView.as_view()),
+    path("hero/Hulk", HeroDetailView.as_view()),
     
 ]
