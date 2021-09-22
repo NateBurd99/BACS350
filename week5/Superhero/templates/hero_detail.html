@@ -1,0 +1,14 @@
+{% extends 'hero_theme.html' %}
+
+{% block content %}
+
+    <h1>Hero Details</h1>
+    <ul>
+        <li>Name: {{hero.name}}</li>
+        <li>Description: {{ hero.description }}</li>
+        <p>
+            <img src="{{hero.image}}" alt="{{hero.name}}" width = 500>
+        </p>
+    </ul>
+    
+{% endblock content %}
