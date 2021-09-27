@@ -1,0 +1,18 @@
+{% extends 'hero_theme.html' %}
+
+{% block content %}
+
+    <h1>Hero Details</h1>
+    <ul>
+        <b><li>Name:</b> {{hero.name}}</li>
+       <b><li>Description: </b>{{ hero.description }}</li>
+        <p>
+            <img src="{{hero.image}}" alt="{{hero.name}}" width = 500>
+        </p>
+    </ul>
+    
+    <a href="/hero/" class="btn btn-success m-5">Hero List</a>
+    <a href="{{ hero.pk }}/" class="btn btn-success m-5">Edit Hero</a>
+
+
+{% endblock content %}
