@@ -33,4 +33,4 @@ class HeroUpdateView(UpdateView):
 class HeroDeleteView(DeleteView):
     model = hero
     template_name = 'hero_delete.html'
-    success_url = reverse_lazy('book_list')
+    success_url = reverse_lazy('hero_list')
