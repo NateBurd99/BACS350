@@ -23,12 +23,12 @@ class HeroListView(ListView):
 class HeroCreateView(CreateView):
     template_name = 'hero_new.html'
     model = hero
-    fields = ['name', 'description']
+    fields = ['name', 'identity', 'strengths', 'weakness', 'description', 'image']
 
 class HeroUpdateView(UpdateView):
     template_name = 'hero_edit.html'
     model = hero
-    fields = ['name', 'description']
+    fields = ['name', 'identity', 'strengths', 'weakness', 'description', 'image']
 
 class HeroDeleteView(DeleteView):
     model = hero

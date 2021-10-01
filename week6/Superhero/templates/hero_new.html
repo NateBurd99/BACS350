@@ -1,15 +1,17 @@
 {% extends 'hero_theme.html' %}
 
 {% block content %}
-
-<h1>Add New Hero</h1>
+<body> 
+<h1 style='color:purple'>Add New Hero </h1>
 
 <form action="" method="post">{% csrf_token %}
 
-    {{ form }}
+    <table>
+        {{ form.as_table }}
+      </table>
 
     <button class="btn btn-success mt-5" type="submit">Add Record</button>
 </form>
 </div>
-
+</body>
 {% endblock content %}
