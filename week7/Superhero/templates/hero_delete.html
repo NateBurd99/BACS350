@@ -1,0 +1,17 @@
+{% extends 'hero_theme.html' %}
+
+
+
+{% block content %}
+<body>
+
+  <h1 style='color:purple'>Delete Hero: {{ hero.name }} </h1>
+
+<form action="" method="post">{% csrf_token %}
+  
+  <p>Are you sure you want to delete "{{ hero.name }}"?</p>
+  <input type="submit" value="Confirm" class="btn btn-dark m-5">
+</form>
+</body>
+
+{% endblock content %}

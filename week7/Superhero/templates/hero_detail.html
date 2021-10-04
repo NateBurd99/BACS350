@@ -1,0 +1,23 @@
+{% extends 'hero_theme.html' %}
+
+{% block content %}
+<body>
+    <h1 style='color:purple'>Hero Detail</h1>
+        <ul>
+        <b><li>Name:</b> {{hero.name}}</li>
+        <b><li>Identity:</b> {{hero.identity}}</li>
+        <b><li>Description: </b>{{ hero.description }}</li>
+        <b><li>Strengths:</b> {{hero.strengths}}</li>
+        <b><li>Weaknesses:</b> {{hero.weakness}}</li>
+        <p>
+            <img src="{{hero.image}}" alt="{{hero.name}}" width = 500>
+        </p>
+    </ul>
+    
+    <a href="/hero/" class="btn btn-primary m-5">Hero List</a>
+    <a href="{{ hero.pk }}/" class="btn btn-secondary m-5">Edit Hero</a>
+    <a href="{{ hero.pk }}/delete" class="btn btn-dark m-5">Delete</a>
+
+</body>
+
+{% endblock content %}
