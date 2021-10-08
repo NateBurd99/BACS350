@@ -12,6 +12,10 @@ from .models import hero
 class HeroView(RedirectView):
     url = '/hero/'
 
+class HomeView(TemplateView):
+    template_name = 'home.html'
+    model = hero
+
 class HeroDetailView(DetailView):
     template_name = 'hero_detail.html'
     model = hero

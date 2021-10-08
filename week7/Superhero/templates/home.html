@@ -1,0 +1,11 @@
+{% extends 'account_theme.html' %}
+
+{% block content %}
+<center> <body>
+    <h1 style='color:purple'>Welcome to Nate's Superhero Website</h1>
+    <a href="/admin/" class="btn btn-success m-5">Django Admin Views</a>
+    <a href="/hero" class="btn btn-success m-5">View Hero's</a>
+    <a href="{% url 'account_list' %}" class="btn btn-success m-5">User Accounts</a>
+  </body>
+</center>
+{% endblock content %}
