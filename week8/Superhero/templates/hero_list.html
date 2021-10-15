@@ -1,0 +1,31 @@
+{% extends 'account_theme.html' %}
+
+{% block title %}
+<h1 style='color:purple'>List of Heros </h1>
+{% endblock title %}
+
+{% block content %}
+<body>
+    <ul>
+      {% for hero in object_list %}
+        <b><li>{{ hero.name }} :  </b>{{ hero.identity }} 
+          <p>
+            <img src="{{hero.image}}" alt="{{hero.name}}" width = 50>
+          </p>
+          <p>
+            <a href="{{ hero.pk }}" class="btn btn-primary m-1">View</a>
+            <a href="{{ hero.pk }}/" class="btn btn-secondary m-1">Edit</a>
+            <a href="{{ hero.pk }}/delete" class="btn btn-dark m-1">Delete</a>
+          </p>
+        </li>
+      {% endfor %}
+    </ul>
+  </body>
+
+  <p>
+    <a href="/admin/" class="btn btn-success m-5">Modify Database with Admin Views</a>
+    <a href="/hero/add" class="btn btn-success m-5">Add New Hero</a>
+    <a href="{% url 'account_list' %}" class="btn btn-success m-5">User Accounts</a>
+
+</p>
+{% endblock content %}
