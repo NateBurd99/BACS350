@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'hero',
     'accounts',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
