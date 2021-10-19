@@ -1,0 +1,15 @@
+{% extends 'account_theme.html' %}
+
+{% block title %}
+<h1 style='color:purple'>Delete Hero: {{ hero.name }}</h1>
+{% endblock title %}
+
+{% block content %}
+<body>
+<form action="" method="post">{% csrf_token %}
+  <p>Are you sure you want to delete "{{ hero.name }}"?</p>
+  <input type="submit" value="Confirm" class="btn btn-dark m-5">
+</form>
+</body>
+
+{% endblock content %}

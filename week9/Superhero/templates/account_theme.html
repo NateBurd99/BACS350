@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Heros!</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"> 
+</head>
+
+<body>
+    {% block header %}
+    {% include '_navBar.html' %}
+    {% endblock header %}
+
+
+    {% block title %}
+    <h1 style='color:purple'>Welcome to Nate's Superhero Website</h1>
+    {% endblock title %}
+
+    {% block content %}
+    {% block main %}
+
+    {% endblock main %}
+    {% endblock content %}
+
+
+</body>
+
+</html>
