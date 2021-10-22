@@ -9,6 +9,7 @@ from django.views.generic import RedirectView
 from django.urls.base import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import hero
+from markdown import markdown
 
 class HeroView(RedirectView):
     url = '/hero/'
@@ -39,3 +40,11 @@ class HeroDeleteView(LoginRequiredMixin, DeleteView):
     model = hero
     template_name = 'hero_delete.html'
     success_url = reverse_lazy('hero_list')
+
+# class DocumentView(TemplateView):
+#     template_name = 'document.html'
+
+#     def get_context_data(self, **kwargs):
+#         document = self.kwargs.get('doc', 'Index')
+#         markdown_text = open(f'Documents/{document}.md').read()
+#         return dict(doc=markdown(markdown_text), file=document)

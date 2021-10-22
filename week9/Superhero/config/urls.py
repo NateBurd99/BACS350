@@ -4,6 +4,7 @@ from hero.views import HeroView, HeroDetailView, HeroListView, HeroCreateView, H
 from django.urls.conf import include, include
 from django.views.generic import RedirectView
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',HomeView.as_view()),
@@ -16,5 +17,8 @@ urlpatterns = [
     path('accounts/', include('django.contrib.auth.urls')),
     path('accounts/', include('accounts.urls')),
     path('', RedirectView.as_view(url='accounts/'), name='home'),
+    path('doc/', include('doc.urls')),
+    # path('doc/', DocumentView.as_view(), name='document'),
+    # path('doc/<str:doc>', DocumentView.as_view()),
 
 ]

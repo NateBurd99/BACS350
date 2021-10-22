@@ -1,0 +1,11 @@
+{% extends 'account_theme.html' %}
+
+{% block title %}
+<h1 style='color:purple'>Viewing Document</h1>
+{% endblock title %}
+
+{% block content %}
+    {% autoescape off %}
+        {{ doc }}
+    {% endautoescape %}
+{% endblock content %}
