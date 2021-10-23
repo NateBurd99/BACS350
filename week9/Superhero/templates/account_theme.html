@@ -12,13 +12,12 @@
 </head>
 
 <body>
-    {% block header %}
+    {% block navbar %}
     {% include '_navBar.html' %}
-    {% endblock header %}
-
+    {% endblock navbar %}
 
     {% block title %}
-    <h1 style='color:purple'>Welcome to Nate's Superhero Website</h1>
+    {% include '_title.html' %}
     {% endblock title %}
 
     {% block content %}
@@ -27,6 +26,9 @@
     {% endblock main %}
     {% endblock content %}
 
+    {% block footer %}
+    {% include '_footer.html' %}
+    {% endblock footer %}
 
 </body>
 
