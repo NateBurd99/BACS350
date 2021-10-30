@@ -1,0 +1,17 @@
+{% extends 'account_theme.html' %}
+
+{% block title %}
+<h1 style='color:purple'>Edit Account</h1>
+{% endblock title %}
+
+
+{% block content%}
+<form action="" method="post">{% csrf_token %}
+
+    {{ form.as_p }}
+
+    <button class="btn btn-success mt-5" type="submit">Save Record</button>
+</form>
+</div>
+
+{% endblock content%}

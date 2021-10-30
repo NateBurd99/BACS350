@@ -1,0 +1,19 @@
+{% extends 'account_theme.html' %}
+
+
+{% block user %}
+{% endblock user %}
+
+{% block content %}
+<h2> Certain features require you to be logged in</h2>
+<h5> Please log in now or click "Sign Up" to create an account</h5>
+<center>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button class="btn btn-success m-5" type="submit">Log In</button>
+</form>
+<a href="{% url 'signup' %}" class="btn btn-danger m-5">Sign Up</a></center>
+
+
+{% endblock content %}
